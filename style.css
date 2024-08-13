@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+Montserrat
+ Weights: 500, 700
+
+Fraunces
+ Weights: 700
+*/
+
+/* 
+Mobile: 375px
+Desktop: 1440px
+*/
+
+/* 
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+*/
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    height: 100vh;
+    
+
+}
+
+.container{
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.178);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.container .content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 300px;
+
+}
+
+.container .top-content p{
+    margin-top: 0;
+}
+
+.content{
+  max-width: 100%;
+  height: 100%;
+  
+}
+
+.top-content p{
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  columns: var(--Dark-grayish-blue);
+}
+
+.top-content h2{
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--Very-dark-blue);
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.description p{
+  font-family: "Fraunces";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  margin-left: 1.25rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.container .product-img img{
+  align-self: center;
+  justify-self: center;
+    max-width: 100%;
+    height: 505px;
+    width: auto;
+    padding-top: 0.3rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+
+}
+
+.prices{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.prices .old-price{
+  text-decoration: line-through;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--Dark-grayish-blue);
+}
+
+
+.prices .new-price{
+  font-size: 2rem;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: var(--Dark-cyan);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card a{
+  text-decoration: none;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  
+}
+
+.card a img{
+  margin-right: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  font-weight: 500;
+}
+
+.card a:hover{
+  background-color: var(--Very-dark-blue);
+  opacity: 0.85;
+  transform: scale(1.1);
+  transition: 0.7s ease;
+  
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--Dark-cyan);
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.attribution a {
+  color: var(--Cream);
+  text-decoration: none;
+}
+
+.attribution a:hover{
+  color: black;
+  background-color: var(--Cream);
+  border-radius: 0.5rem;
+}
+
+
+
+@media (max-width:1023px){
+
+
+
+}
+
+
+@media (max-width:641px){
+  .container{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .body{
+    font-size: 10px;
+  }
+
+  .content{
+    width: 400px;
+    font-size: 10px;
+  }
+
+  .top-content p{
+    font-size: 10px;
+  }
+  .top-content h2{
+    font-size: 20px;
+  }
+  .description p{
+    font-size: 10px;
+    
+  }
+  .prices .old-price{
+    font-size: 14px;
+  }
+  .prices .new-price{
+    font-size: 20px;
+  }
+  .card a{
+    padding: 1rem;
+  }
+
+}
+/* 
+@media (max-width:300px){
+  body{
+      font-size: 10px;
+  }
+}
+ */
